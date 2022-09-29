@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Global - Código</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="A prefeitura de Barueri chegou no metaverso. Venha conhecer mais sobre esse novo mundo.">
+  <meta name="keywords" content="metaverso, avatar, óculos, realidade aumentada, meta, hubs">
+  <meta name="author" content="Inovação Barueri">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="shortcut icon" href="assets/img/cit-favicon.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="assets/js/bg-color.js"></script>
+</head>
+
+<body>
+
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <img src="assets/img/logo.png" alt="Global">
+      <p>Global</p>
+    </a>
+    <p class="device-notification--message">Global has so much to offer that we must request you orient your device to
+      portrait or find a larger screen. You won't be disappointed.</p>
+  </div>
+
+  <!-- content -->
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <img src="assets/img/inovacao-logo-branco.png" alt="Logotipo do inovação Barueri">
+              <!-- <p>Global</p> -->
+            </a>
+            <!-- <button class="header--cta cta">Hire Us</button> -->
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>Home</span></li>
+              <li><span>Home 2</span></li>
+              <li><span>Works</span></li>
+              <li><span>About</span></li>
+              <li><span>Contact</span></li>
+              <li><span>Hire us</span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <li id="home" class="l-section section section--is-active">
+              <div class="intro home">
+                <div class="intro--banner">
+                  <h1>Barueri<br>Além do<br>Universo</h1>
+                  <!-- <button class="cta">Hire Us
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button> -->
+                  <p>O Centro de Inovação e Tecnologia de Barueri agora está no metaverso. Acesse agora mesmo</p>
+                  <img src="assets/img/avatar-metaverso-home.png" alt="Avatar do Metaverso com o óculos VR"
+                    class="avatar-home animate">
+                </div>
+                <div class="intro--options">
+                  <!-- <a href="#0">
+                  <h3>Metiew &amp; Smith</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a> -->
+                  <a href="#0">
+                    <h3>Internet e Marketing Digital</h3>
+                    <p>A prefeitura de Barueri é a primeira prefeitura a oferecer um curso dentro do metaverso</p>
+                  </a>
+                  <a href="#0">
+                    <h3>Sala do CIT</h3>
+                    <p>A prefeitura de Barueri também é a primeira prefeitura a ter uma sala dentro do metaverso</p>
+                  </a>
+                </div>
+              </div>
+              <div id="bg">
+                <canvas></canvas>
+                <canvas></canvas>
+                <canvas></canvas>
+              </div>
+            </li>
+            <li id="teste" class="l-section section section info-section">
+              <div class="intro rain-container">
+                <div class="intro--banner">
+                  <img src="assets/img/avatar-metaverso-info.png" alt="Avatar do Metaverso com o óculos VR"
+                    class="avatar-info animate">
+                  <h1 class="h-info">O que é o<br>metaverso?</h1>
+                  <!-- <button class="cta">Hire Us
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button> -->
+                  <p class="p-info">O metaverso é um novo universo totalmente online, onde proporciona uma experiência
+                    imersiva com o uso das tecnologias de relaidade virtual.
+                    Dentro do dele é possível interagir com o avatar de outras pessoas, jogar e até mesmo trabalhar.</p>
+                </div>
+                <div class="intro--options">
+                  <a href="#0">
+                    <h3>Custos</h3>
+                    <p>Com a utilização da plataforma Mozilla Hubs é possível entar no metaverso de maneira gratuita.
+                    </p>
+                  </a>
+                  <a href="#0">
+                    <h3>É preciso usar o óculos VR?</h3>
+                    <p>Para entrar no metaverso não é obrigatório o uso do óculos de realidade aumentada. Mas para uma
+                      experiência mais imersiva o uso dele é indispensável.</p>
+                  </a>
+                  <!-- <a href="#0">
+                  <h3>Paul &amp; shark</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a> -->
+                </div>
+                <!-- <div class="rain-container"></div> -->
+              </div>
+              <!-- <div class="area" >
+              <ul class="circles">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+              </ul>
+      </div > -->
+            <div class="stars-bg">
+              <canvas id="stars"></canvas>
+            </div>
+
+            </li>
+            <!-- <li class="l-section section">
+            <div class="work">
+              <h2>Selected work</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-victory.jpg" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Victory</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Metiew &amp; Smith</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Alex Nowak</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li> -->
+            <li class="l-section section">
+              <div class="about jonatas-metaverso">
+                <div class="about--banner">
+                  <h2>Jonatas Randal<br>no Metaverso</h2>
+                  <!-- <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a> -->
+                  <p>
+                    Sejam bem-vindos ao metaverso! Ingressem no nosso novo ambiente e tenha uma experiência incrível.
+                  </p>
+                  <!-- <img src="assets/img/about-visual.png" alt="About Us"> -->
+                  <video autoplay muted loop class="gif-jonatas">
+                    <source src="assets/img/randal_video.webm" type="video/mp4">
+                  </video>
+                </div>
+                <!-- <h4>Ambientes Digitais do CIT</h4>
+                <div class="about--options">
+                  <a href="#0">
+                    <h3>Curso</h3>
+                  </a>
+                  <a href="#0">
+                    <h3>Inovação barueri</h3>
+                  </a>
+                  <a href="#0">
+                    <h3>CIT</h3>
+                  </a>
+                </div>
+              </div> -->
+              <!-- <div class="wave"></div> -->
+              <div class="canv">
+                <canvas id="canv"></canvas>
+              </div>
+            </li>
+            <!-- <li class="l-section section">
+            <div class="about salas-cit">
+              <div class="about--banner">
+                <img src="assets/img/about-visual.png" alt="About Us">
+                <h2>Salas<br>do CIT<br>no Metaverso</h2>
+                COMEÇO COMENTARIO
+                <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                FIM COMENTARIO
+                <p>Visite as incriveis salas do CIT dentro do metaverso</p>
+                COMEÇO COMENTARIO
+                <video autoplay muted loop>
+                  <source src="assets/img/randal_video.webm" type="video/mp4">
+                </video>
+                FIM COMENTARIO
+              </div>
+              <div class="box_about--options">
+                <div class="about--options">
+                  <a href="#0">
+                    <h3>Curso</h3>
+                  </a>
+                  <a href="#0">
+                    <h3>Inovação barueri</h3>
+                  </a>
+                  <a href="#0">
+                    <h3>GT</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li> -->
+            <li class="l-section section">
+              <h2 class="heading-sala">CIT no Metaverso</h2>
+
+              <div class="contact">
+                <div class="contact--lockup">
+                  <div class="modal">
+                    <p>Conheça o ambiente virtual no Inovação Barueri</p>
+                    <!-- <div class="modal--information">
+                    <p>Pawia 5, 31-154 Kraków, Poland</p>
+                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
+                    <a href="tel:+148126287560">+48 12 628 75 60</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li>
+                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                  </ul> -->
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <h2 class="heading-sala">AAI - ambiente de aprendizado imersivo no metaverso</h2>
+
+              <div class="contact">
+                <div class="contact--lockup">
+                  <div class="modal">
+                    <p>Aprenda sobre Internet e Marketing digital <br> de uma maneira jamais vista</p>
+                    <!-- <div class="modal--information">
+                    <p>Pawia 5, 31-154 Kraków, Poland</p>
+                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
+                    <a href="tel:+148126287560">+48 12 628 75 60</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li>
+                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                  </ul> -->
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <h2 class="heading-sala">Inovação Barueri no Metaverso</h2>
+
+              <div class="contact">
+                <div class="contact--lockup">
+                  <div class="modal">
+                    <p>Conheça o ambiente virtual no Inovação Barueri</p>
+                    <!-- <div class="modal--information">
+                    <p>Pawia 5, 31-154 Kraków, Poland</p>
+                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
+                    <a href="tel:+148126287560">+48 12 628 75 60</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li>
+                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                  </ul> -->
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="l-section section">
+            <div class="hire">
+              <h2>You want us to do</h2>
+              checkout formspree.io for easy form setup 
+              <form class="work-request">
+                <div class="work-request--options">
+                  <span class="options-a">
+                    <input id="opt-1" type="checkbox" value="app design">
+                    <label for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      App Design
+                    </label>
+                    <input id="opt-2" type="checkbox" value="graphic design">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Graphic Design
+                    </label>
+                    <input id="opt-3" type="checkbox" value="motion design">
+                    <label for="opt-3">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Motion Design
+                    </label>
+                  </span>
+                  <span class="options-b">
+                    <input id="opt-4" type="checkbox" value="ux design">
+                    <label for="opt-4">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      UX Design
+                    </label>
+                    <input id="opt-5" type="checkbox" value="webdesign">
+                    <label for="opt-5">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Webdesign
+                    </label>
+                    <input id="opt-6" type="checkbox" value="marketing">
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Marketing
+                    </label>
+                  </span>
+                </div>
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <input type="submit" value="Send Request">
+              </form>
+            </div>
+          </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="outer-nav">
+      <li class="is-active">Home</li>
+      <li>Home 2</li>
+      <li>Works</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Hire us</li>
+    </ul>
+  </div>
+
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+  <!-- BACKGROUND - BAUERI ALÉM DO UNIVERSO -->
+  <script src="assets/js/background-canvas.js"></script>
+  <!-- BACKGROUND - O QUE É O METAVERSO -->
+  <script src="http://requirejs.org/docs/release/2.1.15/minified/require.js"></script>
+  <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
+  <script src="assets/js/background-stars.js"></script>
+  <!-- <script src="assets/js/delaunay.js"></script>
+<script src="assets/js/require.js"></script> -->
+<script>
+  var num = 200;
+var w = window.innerWidth;
+var h = window.innerHeight;
+var max = 100;
+var _x = 0;
+var _y = 0;
+var _z = 150;
+var dtr = function(d) {
+  return d * Math.PI / 180;
+};
+
+var rnd = function() {
+  return Math.sin(Math.floor(Math.random() * 360) * Math.PI / 180);
+};
+var dist = function(p1, p2, p3) {
+  return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2) + Math.pow(p2.z - p1.z, 2));
+};
+
+var cam = {
+  obj: { x: _x,y: _y, z: _z},
+  dest: {x: 0, y: 0,z: 1},
+  dist: {x: 0,y: 0,z: 200},
+  ang: {cplane: 0,splane: 0,ctheta: 0,stheta: 0},
+  zoom: 1,
+  disp: {x: w / 2,y: h / 2,z: 0},
+  upd: function() {
+    cam.dist.x = cam.dest.x - cam.obj.x;
+    cam.dist.y = cam.dest.y - cam.obj.y;
+    cam.dist.z = cam.dest.z - cam.obj.z;
+    cam.ang.cplane = -cam.dist.z / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.z * cam.dist.z);
+    cam.ang.splane = cam.dist.x / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.z * cam.dist.z);
+    cam.ang.ctheta = Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.z * cam.dist.z) / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.y * cam.dist.y + cam.dist.z * cam.dist.z);
+    cam.ang.stheta = -cam.dist.y / Math.sqrt(cam.dist.x * cam.dist.x + cam.dist.y * cam.dist.y + cam.dist.z * cam.dist.z);
+  }
+};
+
+var trans = {
+  parts: {
+    sz: function(p, sz) {
+      return {
+        x: p.x * sz.x,
+        y: p.y * sz.y,
+        z: p.z * sz.z
+      };
+    },
+    rot: {
+      x: function(p, rot) {
+        return {
+          x: p.x,
+          y: p.y * Math.cos(dtr(rot.x)) - p.z * Math.sin(dtr(rot.x)),
+          z: p.y * Math.sin(dtr(rot.x)) + p.z * Math.cos(dtr(rot.x))
+        };
+      },
+      y: function(p, rot) {
+        return {
+          x: p.x * Math.cos(dtr(rot.y)) + p.z * Math.sin(dtr(rot.y)),
+          y: p.y,
+          z: -p.x * Math.sin(dtr(rot.y)) + p.z * Math.cos(dtr(rot.y))
+        };
+      },
+      z: function(p, rot) {
+        return {
+          x: p.x * Math.cos(dtr(rot.z)) - p.y * Math.sin(dtr(rot.z)),
+          y: p.x * Math.sin(dtr(rot.z)) + p.y * Math.cos(dtr(rot.z)),
+          z: p.z
+        };
+      }
+    },
+    pos: function(p, pos) {
+      return {
+        x: p.x + pos.x,
+        y: p.y + pos.y,
+        z: p.z + pos.z
+      };
+    }
+  },
+  pov: {
+    plane: function(p) {
+      return {
+        x: p.x * cam.ang.cplane + p.z * cam.ang.splane,
+        y: p.y,
+        z: p.x * -cam.ang.splane + p.z * cam.ang.cplane
+      };
+    },
+    theta: function(p) {
+      return {
+        x: p.x,
+        y: p.y * cam.ang.ctheta - p.z * cam.ang.stheta,
+        z: p.y * cam.ang.stheta + p.z * cam.ang.ctheta
+      };
+    },
+    set: function(p) {
+      return {
+        x: p.x - cam.obj.x,
+        y: p.y - cam.obj.y,
+        z: p.z - cam.obj.z
+      };
+    }
+  },
+  persp: function(p) {
+    return {
+      x: p.x * cam.dist.z / p.z * cam.zoom,
+      y: p.y * cam.dist.z / p.z * cam.zoom,
+      z: p.z * cam.zoom,
+      p: cam.dist.z / p.z
+    };
+  },
+  disp: function(p, disp) {
+    return {
+      x: p.x + disp.x,
+      y: -p.y + disp.y,
+      z: p.z + disp.z,
+      p: p.p
+    };
+  },
+  steps: function(_obj_, sz, rot, pos, disp) {
+    var _args = trans.parts.sz(_obj_, sz);
+    _args = trans.parts.rot.x(_args, rot);
+    _args = trans.parts.rot.y(_args, rot);
+    _args = trans.parts.rot.z(_args, rot);
+    _args = trans.parts.pos(_args, pos);
+    _args = trans.pov.plane(_args);
+    _args = trans.pov.theta(_args);
+    _args = trans.pov.set(_args);
+    _args = trans.persp(_args);
+    _args = trans.disp(_args, disp);
+    return _args;
+  }
+};
+
+(function() {
+  "use strict";
+  var threeD = function(param) {
+    this.transIn = {};
+    this.transOut = {};
+    this.transIn.vtx = (param.vtx);
+    this.transIn.sz = (param.sz);
+    this.transIn.rot = (param.rot);
+    this.transIn.pos = (param.pos);
+  };
+
+  threeD.prototype.vupd = function() {
+    this.transOut = trans.steps(
+      this.transIn.vtx,
+      this.transIn.sz,
+      this.transIn.rot,
+      this.transIn.pos,
+      cam.disp
+    );
+  };
+
+  var Build = function() {
+    this.vel = 0.04;
+    this.lim = 360;
+    this.diff = 200;
+    this.initPos = 100;
+    this.toX = _x;
+    this.toY = _y;
+    this.go();
+  };
+
+  Build.prototype.go = function() {
+    this.canvas = document.getElementById("canv");
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
+    this.$ = canv.getContext("2d");
+    this.$.globalCompositeOperation = 'source-over';
+    this.varr = [];
+    this.dist = [];
+    this.calc = [];
+
+    for (var i = 0, len = num; i < len; i++) {
+      this.add();
+    }
+
+    this.rotObj = {x: 0,y: 0,z: 0};
+    this.objSz = {x: w / 5,y: h / 5,z: w / 5};
+  };
+
+  Build.prototype.add = function() {
+    this.varr.push(new threeD({
+      vtx: {x: rnd(),y: rnd(),z: rnd()},
+      sz: {x: 0,y: 0,z: 0},
+      rot: {x: 20,y: -20,z: 0},
+      pos: {
+        x: this.diff * Math.sin(360 * Math.random() * Math.PI / 180),
+        y: this.diff * Math.sin(360 * Math.random() * Math.PI / 180),
+        z: this.diff * Math.sin(360 * Math.random() * Math.PI / 180)
+      }
+    }));
+    this.calc.push({
+      x: 360 * Math.random(),
+      y: 360 * Math.random(),
+      z: 360 * Math.random()
+    });
+  };
+
+  Build.prototype.upd = function() {
+    cam.obj.x += (this.toX - cam.obj.x) * 0.05;
+    cam.obj.y += (this.toY - cam.obj.y) * 0.05;
+  };
+
+  Build.prototype.draw = function() {
+    this.$.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    cam.upd();
+    this.rotObj.x += 0.1;
+    this.rotObj.y += 0.1;
+    this.rotObj.z += 0.1;
+
+    for (var i = 0; i < this.varr.length; i++) {
+      for (var val in this.calc[i]) {
+        if (this.calc[i].hasOwnProperty(val)) {
+          this.calc[i][val] += this.vel;
+          if (this.calc[i][val] > this.lim) this.calc[i][val] = 0;
+        }
+      }
+
+      this.varr[i].transIn.pos = {
+        x: this.diff * Math.cos(this.calc[i].x * Math.PI / 180),
+        y: this.diff * Math.sin(this.calc[i].y * Math.PI / 180),
+        z: this.diff * Math.sin(this.calc[i].z * Math.PI / 180)
+      };
+      this.varr[i].transIn.rot = this.rotObj;
+      this.varr[i].transIn.sz = this.objSz;
+      this.varr[i].vupd();
+      if (this.varr[i].transOut.p < 0) continue;
+      var g = this.$.createRadialGradient(this.varr[i].transOut.x, this.varr[i].transOut.y, this.varr[i].transOut.p, this.varr[i].transOut.x, this.varr[i].transOut.y, this.varr[i].transOut.p*2);
+      this.$.globalCompositeOperation = 'lighter';
+       g.addColorStop(0, 'hsla(255, 255%, 255%, 1)');
+        g.addColorStop(.5, 'hsla('+(i+2)+',85%, 40%,1)');
+        g.addColorStop(1,'hsla('+(i)+',85%, 40%,.5)');
+        this.$.fillStyle = g;
+      this.$.beginPath();
+      this.$.arc(this.varr[i].transOut.x, this.varr[i].transOut.y, this.varr[i].transOut.p * 2, 0, Math.PI * 2, false);
+      this.$.fill();
+      this.$.closePath();
+    }
+  };
+  Build.prototype.anim = function() {
+    window.requestAnimationFrame = (function() {
+      return window.requestAnimationFrame ||
+        function(callback, element) {
+        window.setTimeout(callback, 1000 / 60);
+      };
+    })();
+    var anim = function() {
+      this.upd();
+      this.draw();
+      window.requestAnimationFrame(anim);
+    }.bind(this);
+    window.requestAnimationFrame(anim);
+  };
+
+  Build.prototype.run = function() {
+    this.anim();
+
+    window.addEventListener('mousemove', function(e) {
+      this.toX = (e.clientX - this.canvas.width / 2) * -0.8;
+      this.toY = (e.clientY - this.canvas.height / 2) * 0.8;
+    }.bind(this));
+    window.addEventListener('touchmove',function(e){
+      e.preventDefault();
+      this.toX = (e.touches[0].clientX - this.canvas.width / 2) * -0.8;
+      this.toY = (e.touches[0].clientY - this.canvas.height / 2) * 0.8;
+    }.bind(this));
+    window.addEventListener('mousedown', function(e) {
+      for (var i = 0; i < 100; i++) {
+        this.add();
+      }
+    }.bind(this));
+    window.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      for (var i = 0; i < 100; i++) {
+        this.add();
+      }
+    }.bind(this));
+  };
+  var app = new Build();
+  app.run();
+})();
+window.addEventListener('resize',function(){
+ canvas.width = w = window.innerWidth;
+ canvas.height = h = window.innerHeight;
+}, false);
+</script>
+</body>
+
+</html>
