@@ -1490,14 +1490,20 @@ body {
 
 .sec-cit{
     background-image: url("../img/cit-inovacao-vr.jpg");
+    /* RESPONSIVO */
+    background-position: 43%;
 }
 
 .sec-aai{
     background-image: url("../img/1664907264880.jpg");
+        /* RESPONSIVO */
+        background-position: 30%;
 }
 
 .sec-inovacao{
     background-image: url("../img/inovacao-metaverso-vr.jpg");
+        /* RESPONSIVO */
+        background-position: 20%;
 }
 
 .contact--lockup {
@@ -1512,7 +1518,9 @@ body {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
+    /* align-items: center; */
+    /* RESPONSIVO */
+    align-items: end;
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -1541,6 +1549,9 @@ body {
     background-color: #0c0c0c;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75);
     max-width: 300px;
+
+    /* RESPONSIVO */
+    margin-bottom: 60px;
 }
 
 .contact--lockup .modal--information p,
