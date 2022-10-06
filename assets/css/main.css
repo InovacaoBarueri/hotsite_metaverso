@@ -507,7 +507,7 @@ body {
     color: #fff
 }
 
-.header--logo img{
+.header--logo img {
     width: 100px;
 }
 
@@ -562,7 +562,7 @@ body {
 }
 
 .header--cta {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -572,13 +572,14 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
-    text-transform: uppercase;
-    background-color: #0f33ff;
+    text-transform: uppercase; */
+    /* background-color: #0f33ff; */
+    /* background-color: #0ea1e6;
     border: none;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: opacity .4s ease-in-out, visibility 0s .4s;
-    transition: opacity .4s ease-in-out, visibility 0s .4s
+    transition: opacity .4s ease-in-out, visibility 0s .4s */
 }
 
 .header--cta:focus {
@@ -596,6 +597,20 @@ body {
     .header--cta {
         display: none
     }
+}
+
+.cta:active {
+    top: 2px;
+}
+
+.cta {
+    border-color: #0ea1e6;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #0ea1e6 inset, 0 0 0 0 #0ea1e6;
+    transition: all 150ms ease-in-out;
+}
+.cta:hover {
+    box-shadow: 0 0 10px 0 #0ea1e6 inset, 0 0 10px 4px #0ea1e6;
 }
 
 .side-nav {
@@ -678,7 +693,7 @@ body {
 }
 
 .side-nav li.is-active {
-    color: #0f33ff;
+    color: #0ea1e6;
     -webkit-transition: color .4s ease-in-out;
     transition: color .4s ease-in-out
 }
@@ -753,7 +768,7 @@ body {
     left: 0;
     width: 30px;
     height: 4px;
-    background-color: #0f33ff
+    background-color: #0ea1e6
 }
 
 .intro--banner h1 {
@@ -763,10 +778,13 @@ body {
     line-height: 1;
     z-index: 1
 }
-.h-info, .p-info{
+
+.h-info,
+.p-info {
     text-align: right;
 }
-.p-info{
+
+.p-info {
     width: 50%;
     margin-left: auto;
 }
@@ -786,7 +804,7 @@ body {
     left: 23px;
     right: 0;
     height: 100%;
-    background-color: #0f33ff;
+    /* background-color: #0ea1e6; */
     z-index: -1;
     -webkit-transition: left .2s ease-in-out;
     transition: left .2s ease-in-out
@@ -804,7 +822,7 @@ body {
     position: relative;
     left: 5px;
     width: 15px;
-    fill: #fff
+    /* fill: #fff */
 }
 
 .intro--banner img {
@@ -812,29 +830,32 @@ body {
     bottom: 21px;
     right: -12px
 }
-.intro--banner .animate{
+
+.intro--banner .animate {
     animation-name: avatar-animated;
     animation-duration: 1.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @keyframes avatar-animated {
-    from{
+    from {
         top: -10px;
     }
-    to{
+
+    to {
         top: -30px;
     }
 }
 
-.avatar-info{
+.avatar-info {
     /* Invertendo img */
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    
+
     left: -12px;
 }
 
@@ -865,6 +886,7 @@ body {
     -webkit-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out
 }
+
 /* .info-section .intro--options>a{
     max-width: 400px;
 } */
@@ -1209,28 +1231,31 @@ body {
 .jonatas-metaverso p {
     width: 50%;
 }
-.gif-jonatas{
+
+.gif-jonatas {
     position: absolute;
     top: 0;
     right: 0;
 }
 
 
-.salas-cit h2{
+.salas-cit h2 {
     text-align: right;
 }
-.salas-cit p{
+
+.salas-cit p {
     text-align: right;
     width: 50%;
     margin-left: auto;
 }
-.salas-cit img{
+
+.salas-cit img {
     /* Invertendo img */
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    
+
     left: -12px;
 }
 
@@ -1238,10 +1263,12 @@ body {
     position: relative;
     height: 475px;
 }
+
 .jonatas-metaverso .about--banner {
     position: relative;
     height: 405px;
 }
+
 .jonatas-metaverso .about--banner::before {
     /* content: "";
     position: absolute;
@@ -1249,7 +1276,7 @@ body {
     left: 200px;
     -webkit-transform: rotate(-25deg);
     transform: rotate(-25deg);
-    border: 5px solid #0f33ff;
+    border: 5px solid #0ea1e6;
     border-right-color: transparent;
     border-bottom-color: transparent */
     content: "";
@@ -1261,7 +1288,8 @@ body {
     /* background-color: #282828 */
     background-color: #bdbaba;
 }
-.jonatas-metaverso H4{
+
+.jonatas-metaverso H4 {
     font-size: 24px;
     margin-top: 0;
 }
@@ -1275,7 +1303,7 @@ body {
     transform: rotate(45deg);
     width: 10px;
     height: 10px;
-    background-color: #0f33ff
+    background-color: #0ea1e6
 } */
 
 .about--banner h2 {
@@ -1294,7 +1322,7 @@ body {
     left: 268px;
     width: 30px;
     height: 30px;
-    background-color: #0f33ff;
+    background-color: #0ea1e6;
     border-radius: 50%
 } */
 
@@ -1305,7 +1333,7 @@ body {
     left: 255px;
     width: 10px;
     height: 10px;
-    background-color: #0f33ff
+    background-color: #0ea1e6
 } */
 
 .about--banner a {
@@ -1360,7 +1388,7 @@ body {
     height: 100px;
     text-decoration: none;
     color: #fff;
-    border: 10px solid #0f33ff;
+    border: 10px solid #0ea1e6;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat
@@ -1464,7 +1492,7 @@ body {
     }
 }
 
-.heading-sala{
+.heading-sala {
     position: relative;
     margin-top: 35px;
     font-size: 24px;
@@ -1474,6 +1502,13 @@ body {
 
     margin-top: 80px;
     margin-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .heading-sala {
+        text-align: center;
+        margin-left: 0px;
+    }
 }
 
 .contact {
@@ -1488,22 +1523,22 @@ body {
     background-repeat: no-repeat
 }
 
-.sec-cit{
+.sec-cit {
     background-image: url("../img/cit-inovacao-vr.jpg");
     /* RESPONSIVO */
     background-position: 43%;
 }
 
-.sec-aai{
+.sec-aai {
     background-image: url("../img/1664907264880.jpg");
-        /* RESPONSIVO */
-        background-position: 30%;
+    /* RESPONSIVO */
+    background-position: 30%;
 }
 
-.sec-inovacao{
+.sec-inovacao {
     background-image: url("../img/inovacao-metaverso-vr.jpg");
-        /* RESPONSIVO */
-        background-position: 20%;
+    /* RESPONSIVO */
+    background-position: 20%;
 }
 
 .contact--lockup {
@@ -1528,9 +1563,21 @@ body {
     margin: 0 auto
 }
 
+@media screen and (min-width: 900px) {
+    .contact--lockup {
+        align-items: center;
+    }
+
+    .sec-cit,
+    .sec-aai,
+    .sec-inovacao {
+        background-position: center;
+    }
+}
+
 @media (max-width: 1180px) {
     .contact--lockup {
-        max-width: 90%
+        max-width: 90%;
     }
 }
 
@@ -1588,7 +1635,7 @@ body {
 
 .contact--lockup .modal--options li:nth-child(3) {
     margin-bottom: 0;
-    background-color: #0f33ff;
+    background-color: #0ea1e6;
     text-transform: uppercase
 }
 
@@ -1659,7 +1706,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #0f33ff;
+    background-color: #0ea1e6;
     border: none;
     border-radius: 0
 }
@@ -1740,8 +1787,8 @@ body {
 }
 
 .work-request--options input[type="checkbox"]:checked+label {
-    background-color: #0f33ff;
-    border-color: #0f33ff
+    background-color: #0ea1e6;
+    border-color: #0ea1e6
 }
 
 .work-request--options input[type="checkbox"]:checked+label svg {
@@ -1875,7 +1922,7 @@ body {
     -webkit-transform: translateZ(0) translateX(0) rotateY(0deg);
     transform: translateZ(0) translateX(0) rotateY(0deg);
     min-height: 100%;
-    outline: 30px solid #0f33ff;
+    outline: 30px solid #0ea1e6;
     -webkit-transition: -webkit-transform .4s;
     transition: -webkit-transform .4s;
     transition: transform .4s;
@@ -1903,7 +1950,7 @@ body {
 .effect-rotate-left--animate .container {
     -webkit-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
     transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
-    outline: 30px solid #0f33ff
+    outline: 30px solid #0ea1e6
 }
 
 .outer-nav {
@@ -1959,19 +2006,19 @@ body {
 }
 
 @media screen and (min-width: 700px) and (max-width: 925px) {
-    .outer-nav>li{
+    .outer-nav>li {
         font-size: 25px;
     }
 }
 
 @media screen and (min-width: 480px) and (max-width: 700px) {
-    .outer-nav>li{
+    .outer-nav>li {
         font-size: 15px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .outer-nav>li{
+    .outer-nav>li {
         font-size: 12px;
     }
 }
@@ -1997,7 +2044,7 @@ body {
     width: 110%;
     height: 15px;
     opacity: 0;
-    background-color: #0f33ff
+    background-color: #0ea1e6
 }
 
 .outer-nav>li.is-active::before {
@@ -2061,82 +2108,88 @@ body {
 /* body, html {
   background: #090d00;
 } */
-body{
-    background: rgb(2,0,36);
+body {
+    background: rgb(2, 0, 36);
     /* background: linear-gradient(195deg, rgb(5, 3, 31) 0%, rgb(27, 12, 37) 35%, rgb(13, 17, 46) 100%); */
-  }
+}
 
 /* BACKGROUND HOME */
 #bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgb(55,6,88);
-    background: radial-gradient(circle, rgba(55,6,88,1) 3%, rgba(57,12,88,1) 33%, rgba(16,13,79,1) 100%);
-}
-
-#bg canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* BACKGROUND: O QUE É O METAVERSO E JONATAS NO METAVERSO */
-/* STARS: O QUE É O METAVERSO */
-/* CANV: JONATAS NO METAVERSO */
-  .stars-bg, .canv {
-    /* background-color: #31102F;
-    background: linear-gradient(195deg, rgb(5, 3, 31) 0%, rgb(27, 12, 37) 35%, rgb(13, 17, 46) 100%); */
-    background: rgb(55,6,88);
-background: linear-gradient(311deg, rgba(55,6,88,1) 3%, rgba(57,12,88,1) 33%, rgba(16,13,79,1) 100%);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-  }
-  .canv{
+    background: rgb(55, 6, 88);
+    background: radial-gradient(circle, rgba(55, 6, 88, 1) 3%, rgba(57, 12, 88, 1) 33%, rgba(16, 13, 79, 1) 100%);
+}
+
+#bg canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* BACKGROUND: O QUE É O METAVERSO E JONATAS NO METAVERSO */
+/* STARS: O QUE É O METAVERSO */
+/* CANV: JONATAS NO METAVERSO */
+.stars-bg,
+.canv {
+    /* background-color: #31102F;
+    background: linear-gradient(195deg, rgb(5, 3, 31) 0%, rgb(27, 12, 37) 35%, rgb(13, 17, 46) 100%); */
+    background: rgb(55, 6, 88);
+    background: linear-gradient(311deg, rgba(55, 6, 88, 1) 3%, rgba(57, 12, 88, 1) 33%, rgba(16, 13, 79, 1) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.canv {
     /* background-image: radial-gradient(ellipse farthest-corner at center top, hsla(200, 100%, 15%, 1) 0%, hsla(220, 90%, 1%, 1) 100%); */
-    background: rgb(55,6,88);
-    background: radial-gradient(circle, rgba(55,6,88,1) 3%, rgba(57,12,88,1) 33%, rgba(16,13,79,1) 100%);
-  }
-  #stars, #canv {
+    background: rgb(55, 6, 88);
+    background: radial-gradient(circle, rgba(55, 6, 88, 1) 3%, rgba(57, 12, 88, 1) 33%, rgba(16, 13, 79, 1) 100%);
+}
+
+#stars,
+#canv {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100%;
-  }
+}
 
-  .filter {
+.filter {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background:  #fe5757;
+    background: #fe5757;
     animation: colorChange 30s ease-in-out infinite;
     animation-fill-mode: both;
     mix-blend-mode: overlay;
-  }
-  
-  @keyframes colorChange {
+}
+
+@keyframes colorChange {
+
     0%,
     100% {
-      opacity: 0;
+        opacity: 0;
     }
+
     50% {
-      opacity: .9;
+        opacity: .9;
     }
-  }
-  
-  .landscape {
+}
+
+.landscape {
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -2147,13 +2200,14 @@ background: linear-gradient(311deg, rgba(55,6,88,1) 3%, rgba(57,12,88,1) 33%, rg
     background-size: 1000px 250px;
     background-repeat: repeat-x;
     background-position: center bottom; */
-  }
+}
 
-  .dg{
+.dg {
     display: none;
-  }
+}
+
 /* BTN PARA ENTRAR NO METAVERSO */
-  .modal--options a {
+.modal--options a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -2166,42 +2220,44 @@ background: linear-gradient(311deg, rgba(55,6,88,1) 3%, rgba(57,12,88,1) 33%, rg
     transition: .5s;
     margin-top: 40px;
     /* letter-spacing: 4px */
-  }
-  
-  .modal--options a:hover {
+}
+
+.modal--options a:hover {
     background: #0ea1e6;
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px #0ea1e6,
-                0 0 25px #0ea1e6,
-                0 0 50px #0ea1e6,
-                0 0 100px #0ea1e6;
-  }
-  
-  .modal--options a span {
+        0 0 25px #0ea1e6,
+        0 0 50px #0ea1e6,
+        0 0 100px #0ea1e6;
+}
+
+.modal--options a span {
     position: absolute;
     display: block;
-  }
-  
-  .modal--options a span:nth-child(1) {
+}
+
+.modal--options a span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, #0ea1e6);
     animation: btn-anim1 1s linear infinite;
-  }
-  
-  @keyframes btn-anim1 {
+}
+
+@keyframes btn-anim1 {
     0% {
-      left: -100%;
+        left: -100%;
     }
-    50%,100% {
-      left: 100%;
+
+    50%,
+    100% {
+        left: 100%;
     }
-  }
-  
-  .modal--options a span:nth-child(2) {
+}
+
+.modal--options a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -2209,18 +2265,20 @@ background: linear-gradient(311deg, rgba(55,6,88,1) 3%, rgba(57,12,88,1) 33%, rg
     background: linear-gradient(180deg, transparent, #0ea1e6);
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s
-  }
-  
-  @keyframes btn-anim2 {
+}
+
+@keyframes btn-anim2 {
     0% {
-      top: -100%;
+        top: -100%;
     }
-    50%,100% {
-      top: 100%;
+
+    50%,
+    100% {
+        top: 100%;
     }
-  }
-  
-  .modal--options a span:nth-child(3) {
+}
+
+.modal--options a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -2228,18 +2286,20 @@ background: linear-gradient(311deg, rgba(55,6,88,1) 3%, rgba(57,12,88,1) 33%, rg
     background: linear-gradient(270deg, transparent, #0ea1e6);
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
-  }
-  
-  @keyframes btn-anim3 {
+}
+
+@keyframes btn-anim3 {
     0% {
-      right: -100%;
+        right: -100%;
     }
-    50%,100% {
-      right: 100%;
+
+    50%,
+    100% {
+        right: 100%;
     }
-  }
-  
-  .modal--options a span:nth-child(4) {
+}
+
+.modal--options a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -2247,14 +2307,15 @@ background: linear-gradient(311deg, rgba(55,6,88,1) 3%, rgba(57,12,88,1) 33%, rg
     background: linear-gradient(360deg, transparent, #0ea1e6);
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s
-  }
-  
-  @keyframes btn-anim4 {
+}
+
+@keyframes btn-anim4 {
     0% {
-      bottom: -100%;
+        bottom: -100%;
     }
-    50%,100% {
-      bottom: 100%;
+
+    50%,
+    100% {
+        bottom: 100%;
     }
-  }
-  
+}
