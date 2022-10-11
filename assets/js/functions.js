@@ -55,7 +55,7 @@ $( document ).ready(function() {
 
     var curActive = $('.side-nav').find('.is-active'),
         curPos = $('.side-nav').children().index(curActive),
-        lastItem = $('.side-nav').children().length - 1,
+        lastItem = $('.side-nav').children().length - 3,
         nextPos = lastItem;
 
     updateNavs(lastItem);
@@ -64,23 +64,23 @@ $( document ).ready(function() {
   });
 
   // swipe support for touch devices
-  var targetElement = document.getElementById('viewport'),
-      mc = new Hammer(targetElement);
-  mc.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-  mc.on('swipeup swipedown', function(e) {
+  // var targetElement = document.getElementById('viewport'),
+  //     mc = new Hammer(targetElement);
+  // mc.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+  // mc.on('swipeup swipedown', function(e) {
 
-    updateHelper(e);
+  //   updateHelper(e);
 
-  });
+  // });
 
-  $(document).keyup(function(e){
+  // $(document).keyup(function(e){
 
-    if (!($('.outer-nav').hasClass('is-vis'))) {
-      e.preventDefault();
-      updateHelper(e);
-    }
+  //   if (!($('.outer-nav').hasClass('is-vis'))) {
+  //     e.preventDefault();
+  //     updateHelper(e);
+  //   }
 
-  });
+  // });
 
   // determine scroll, swipe, and arrow key direction
   function updateHelper(param) {
