@@ -1071,6 +1071,10 @@ body {
     .p-info{
         margin-top: 130px;
     }
+
+    .topics-sala{
+        font-size: 11px !important;
+    }
 }
 
 /* @media (max-width: 600px) {
