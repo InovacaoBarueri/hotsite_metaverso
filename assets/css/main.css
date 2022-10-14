@@ -1725,7 +1725,8 @@ body {
 }
 
 .topics-sala{
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-size: 10px;
     text-align: left;
     list-style: inside;
     margin-top: 5px;
@@ -1790,21 +1791,59 @@ body {
 }
 
 .contact--lockup .modal {
-    padding: 45px 45px;
+    /* padding: 45px 45px; */
+    padding: 35px 35px;
     text-align: center;
-    background-color: #0c0c0c;
+    /* background-color: #0c0c0c; */
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75);
-    max-width: 300px;
+    /* max-width: 300px; */
+    max-width: 25%;
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contact--lockup .modal p{
+    font-size: 11px;
+    text-align: left;
 }
 @media (max-width: 900px){
+    .contact--lockup{
+        width: 100%;
+        max-width: none;
+    }
     .contact--lockup .modal {
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
         padding: 25px 25px;
-        font-size: 11px;
+        /* font-size: 13px; */
+        width: 100%;
+        max-width: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+    }
+    .heading-sala{
+        margin-left: 0;
     }
 
     .contact--lockup .modal--options a{
         font-size: 14px;
+    }
+
+    .contact--lockup .modal p{
+        font-size: 13px;
+        text-align: left;
+    }
+    .topics-sala{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 543px){
+    .contact--lockup .modal {
+        justify-content: end;
     }
 }
 
@@ -1852,7 +1891,11 @@ body {
     padding: 8px 0;
     text-decoration: none;
     color: #fff;
-    font-weight: 700
+    font-weight: 700;
+    
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hire {
