@@ -688,6 +688,10 @@ body {
     content: "06"
 }
 
+.side-nav li:nth-child(7)::before {
+    content: "07"
+}
+
 .side-nav li.is-active {
     color: #0ea1e6;
     -webkit-transition: color .4s ease-in-out;
@@ -1700,6 +1704,12 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat
+}
+
+.sec-mapa {
+    background-image: url("../img/mapa-metaverso680.png");
+    /* RESPONSIVO */
+    /* background-position: 20%; */
 }
 
 .sec-cit {
