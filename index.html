@@ -293,7 +293,7 @@
             <!-- <h2 class="heading-sala">Inovação Barueri no Metaverso</h2> -->
 
             <div class="contact sec-mapa">
-              <div class="contact--lockup">
+              <div class="contact--lockup mapa">
                 <!-- <div class="modal"> -->
                   <!-- <p>
                     O Inovação Barueri, como o nome já diz, é o responsável por levar Inovação para a cidade de Barueri. E assim como o CIT, o Inovação também tem seu lugar reservado no metaverso. Chegando nesse mundo é normal você se perder com tantos equipamentos e projetos inovadores, mas fique tranquilo, aqui vai uma lista para te ajudar:
@@ -333,7 +333,17 @@
                     </a>
                   </ul> -->
                 <!-- </div> -->
+                <img src="assets/img/mapa-metaverso.jpg" alt="" class="img-pc" >
+                <img src="assets/img/1666113153696.jpg" alt="" class="img-tablet" usemap="#workmap">
+                <img src="assets/img/mapa-metaverso680.jpg" alt="" class="celular">
+                <img src="assets/img/mapa-metaverso480.jpg" alt="" class="celular-menor">
+                <map name="workmap">
+                  <area shape="rect" coords="890,340,1190,420" alt="Computer" href="#sec-inovacao">
+                  <area shape="rect" coords="990,440,790,820" alt="Computer" href="#sec-inovacao">
+                  <area shape="rect" coords="1190,380,1400,520" alt="Computer" href="#sec-inovacao">
+                </map>
               </div>
+
             </div>
           </li>
 
@@ -441,7 +451,7 @@
                 </div>
               </div>
             </li>
-            <li class="l-section section">
+            <li class="l-section section" id="sec-inovacao">
               <h2 class="heading-sala">Inovação Barueri no Metaverso</h2>
 
               <div class="contact sec-inovacao">
@@ -604,6 +614,12 @@
   <script src="assets/js/background-stars.js"></script>
   <script src="assets/js/bg-galaxy.js"></script>
   <script src="assets/js/background-home.js"></script>
+  <script src="assets/js/jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('img[usemap]').rwdImageMaps();
+    })
+  </script>
 </body>
 
 </html>
