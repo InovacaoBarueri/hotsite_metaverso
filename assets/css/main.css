@@ -938,9 +938,9 @@ body {
 }
 
 @media screen and (min-width: 680px) and (max-width: 900px) {
-    .intro--banner {
+    /* .intro--banner {
         height: 380px
-    }
+    } */
 
     .intro--banner h1 {
         font-size: 55px
@@ -1076,8 +1076,14 @@ body {
         margin-top: 130px;
     }
 
+    .heading-sala{
+        font-size: 14px !important;
+    }
+    .contact--lockup .modal p{
+        font-size: 12px !important;
+    }
     .topics-sala{
-        font-size: 11px !important;
+        font-size: 10px !important;
     }
 }
 
@@ -1691,6 +1697,7 @@ body {
     .heading-sala {
         text-align: center;
         margin-left: 0px;
+        font-size: 16px !important;
     }
 }
 
@@ -1724,7 +1731,7 @@ body {
 }
 
 /* TABLET */
-@media screen and (min-width: 660px) and (max-width: 1116px) {
+@media screen and (min-width: 680px) and (max-width: 1115px) {
     .img-pc, .celular, .celular-menor{
         display: none;
     }
@@ -1740,7 +1747,7 @@ body {
 
 /* CELULAR (GRANDE) */
 
-@media screen and (min-width: 481px) and (max-width: 680px) {
+@media screen and (min-width: 481px) and (max-width: 679px) {
     .img-tablet, .celular-menor, .img-pc{
         display: none;
     }
@@ -1813,7 +1820,7 @@ body {
 
 .topics-sala{
     /* font-size: 13px; */
-    font-size: 10px;
+    font-size: 12px;
     text-align: left;
     list-style: inside;
     margin-top: 5px;
@@ -1903,10 +1910,19 @@ body {
 }
 
 .contact--lockup .modal p{
-    font-size: 11px;
+    font-size: 13px;
     text-align: left;
 }
-@media (max-width: 900px){
+/* @media sreen and (min-width: 900px) and (max-width: 1024px){
+    .contact--lockup .modal p{
+        font-size: 21px;
+        text-align: left;
+    }
+    .topics-sala{
+        font-size: 18px !important;
+    }
+} */
+@media screen and (max-width: 1024px){
     .contact--lockup{
         width: 100%;
         max-width: none;
@@ -1926,14 +1942,6 @@ body {
 
     .contact--lockup .modal--options a{
         font-size: 14px;
-    }
-
-    .contact--lockup .modal p{
-        font-size: 12px;
-        text-align: left;
-    }
-    .topics-sala{
-        font-size: 11px;
     }
 }
 
@@ -1965,7 +1973,7 @@ body {
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 900px){
+@media screen and (min-width: 700px) and (max-width: 1024px){
     .contact--lockup .modal p{
         font-size: 22px;
         text-align: left;
@@ -1976,7 +1984,50 @@ body {
     .contact--lockup .modal--options a{
         font-size: 18px;
     }
+
+    p{
+        font-size: 18px;
+    }
+    .intro--baner{
+        height: 425px !important;
+    }
+    .home p{
+        width: 70%;
+    }
 }
+
+@media screen and (min-width: 1440px) {
+    .contact--lockup .modal p{
+        font-size: 22px;
+        text-align: left;
+    }
+    .topics-sala{
+        font-size: 18px;
+    }
+    .contact--lockup .modal{
+        max-width: 30%;
+    }
+    .contact--lockup .modal--options a{
+        font-size: 18px;
+    }
+    .side-nav{
+        width: 260px;
+    }
+    .side-nav>li span{
+        font-size: 20px;
+    }
+}
+
+/* @media screen and (max-width: 320px){
+    .contact--lockup .modal p{
+        font-size: 11px;
+        text-align: left;
+    }
+    .topics-sala{
+        font-size: 8px;
+    }
+} */
+
 
 .contact--lockup .modal--information p,
 .contact--lockup .modal--information a {
