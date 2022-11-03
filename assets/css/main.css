@@ -605,7 +605,7 @@ body {
 }
 .goog-te-gadget{
     position: relative;
-    font-size: 0 !important;
+    font-size: 0px !important;
 }
 .goog-te-gadget div:nth-child(1){
     position: absolute;
@@ -613,6 +613,10 @@ body {
     margin-top: 9px;
 
 }
+
+/* .goog-logo-link, .goog-logo-link:link, .goog-logo-link:visited, .goog-logo-link:hover, .goog-logo-link:active{
+    font-size: 0 !important;
+} */
 
 
 select{
@@ -646,9 +650,9 @@ option{
     display: none;
 }
 
-.goog-te-gadget span, .goog-te-gadget::after{
+/* .goog-te-gadget span, .goog-te-gadget::after{
     display: none;
-}
+} */
 
 .cta:active {
     top: 2px;
