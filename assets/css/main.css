@@ -625,7 +625,7 @@ select{
 }
 @media screen and (min-width: 360px) and (max-width: 480px){
     select{
-        max-width: 100px;
+        max-width: 140px;
     }
 }
 @media (max-width: 359px){
@@ -1039,7 +1039,9 @@ option{
     } */
 
     p{
-        font-size: 12px !important;
+        /* font-size: 12px !important; */
+        
+        font-size: 11px !important;
     }
 
     .p-info{
@@ -1521,7 +1523,26 @@ option{
     right: 0;
 }
 
+
+@media (min-width: 1025px) {
+    .out{
+        display: block;
+    }
+    .in{
+        display: none;
+    }
+    .contact--lockup .modal{
+        height: calc(100% - 70px);
+    }
+}
+
 @media (max-width: 1024px) {
+    .in{
+        display: block;
+    }
+    .out{
+        display: none;
+    }
     .jonatas-metaverso .about--banner{
         height: auto !important;
     }
@@ -1707,11 +1728,11 @@ option{
     transition: left .2s ease-in-out
 }
 
-.about--banner img {
+/* .about--banner img {
     position: absolute;
     bottom: -90px;
     right: -12px
-}
+} */
 
 .about--options {
     display: -webkit-box;
@@ -1832,9 +1853,9 @@ option{
         left: 205px
     }
 
-    .about--banner img {
+    /* .about--banner img {
         display: none
-    }
+    } */
 
     .about--options {
         display: none
@@ -2019,6 +2040,7 @@ option{
 
 .lista-topicos{
     padding-left: 0;
+    margin-top: 10px;
 }
 
 .topics-sala{
@@ -2123,7 +2145,8 @@ option{
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75);
     /* max-width: 300px; */
     max-width: 25%;
-    height: calc(100% - 80px);
+    
+    /* height: calc(100% - 80px); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2151,19 +2174,27 @@ option{
     .contact--lockup{
         width: 100%;
         max-width: none;
+        background-color: rgba(0, 0, 0, 0.8);
     }
     .contact--lockup .modal {
         /* margin-bottom: 60px; */
-        padding: 25px 25px;
+        /* padding: 25px 25px; */
+        
+        padding: 0px 25px;
         /* font-size: 13px; */
         width: 100%;
         max-width: none;
-        background-color: rgba(0, 0, 0, 0.8);
+        /* background-color: rgba(0, 0, 0, 0.8); */
+        background-color: transparent;
         justify-content: center;
+        box-shadow: none ;
     }
     .heading-sala{
         margin-left: 0;
         width: auto;
+        
+        margin-top: 35px !important;
+        margin-bottom: 5px;
     }
 
     .contact--lockup .modal--options a{
@@ -2171,11 +2202,11 @@ option{
     }
 }
 
-@media (max-width: 543px){
+/* @media (max-width: 543px){
     .contact--lockup .modal {
         justify-content: end;
     }
-}
+} */
 
 @media (max-height: 480px){
     .intro--banner img{
@@ -2257,9 +2288,22 @@ option{
     }
 }
 
-@media (max-height: 670px){
+
+@media screen and (max-height: 670px){
     .contact--lockup .modal p{
         line-height: 16px;
+    }
+}
+@media screen and (max-height: 670px) and (min-width: 600px) and (max-width: 1024px){
+    .contact--lockup .modal p{
+        line-height: 16px;
+        font-size: 14px !important;
+    }
+    .topics-sala{
+        font-size: 12px !important;
+    }
+    .modal--options a{
+        font-size: 12px !important;
     }
 }
 
@@ -2954,7 +2998,9 @@ body {
     /* text-transform: uppercase; */
     overflow: hidden;
     transition: .5s;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    
+    margin-top: 25px;
     /* letter-spacing: 4px */
 }
 
